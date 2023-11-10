@@ -1,0 +1,20 @@
+{
+    "name": "admingate/revision",
+    "description": "Revision package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Admingate\\Revision\\": "src"
+        }
+    },
+    "require": {
+        "admingate/admingate": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Admingate\\Revision\\Providers\\RevisionServiceProvider"
+            ]
+        }
+    }
+}
